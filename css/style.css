@@ -1,0 +1,735 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background-color: #e54343d1;
+    color: #181818;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Alata', sans-serif;
+}
+
+.nav__a--active {
+    background-color: #5d5d5d;
+}
+
+/*  INICIO  */
+
+/* Header */
+.header {
+    width: 100%;
+    height: 105px;
+    background-color: #3a3a3a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-flex-container {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img {
+    height: 105px;
+}
+
+.logo-flex-container a {
+    height: auto;
+    text-decoration: none;
+}
+
+.p-logo {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    color: #d41c1c;
+    font-size: 35px;
+    margin: 0;
+}
+
+/* BOOTSTRAP 
+.navbar {
+    padding: 0;
+    background-color: #343434;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand p {
+    margin: 0;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    color: #d41c1c;
+    font-size: 35px;
+}
+.navbar div form {
+    margin: 0 98px;
+}
+.navbar-nav li a {
+    color: #d8dad3;
+} */
+
+.buscador-container {
+    display: flex;
+    height: 100%;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador-container input[type="search"] {
+    border-radius: 25px;
+    border: solid 1px #d8dad3;
+    width: 200px;
+    height: 25px;
+    text-align: left;
+    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.buscador-container input[type="submit"] {
+    height: 25px;
+    width: 50px;
+    background-color: #fff;
+    border: solid 1px #cacaca;
+    border-radius: 25px;
+} 
+
+.nav {
+    text-transform: uppercase;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 10px 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #d8dad3;
+    padding: 5px;
+}
+
+.nav ul li a:hover {
+    color: #f1f2eb;
+}
+
+@media (max-width: 756px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+        position: inherit;
+        height: auto;
+        justify-content: center;
+    }
+
+    .logo-flex-container {
+        width: 100%;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .logo-flex-container .logo-img {
+        height: 80px;
+    }
+
+    .p-logo {
+        font-size: 27px;
+    }
+
+    .buscador-container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+
+    }
+
+    .nav ul {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .nav ul li {
+        font-size: 14px;
+    }
+
+    #main-index .interactive-main h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 510px) {
+    .nav ul li {
+        margin: 10px 0px;
+        font-size: 13px;
+    }
+    .nav ul {
+        padding: 0;
+    }
+}
+
+
+/*--------Main---------*/
+
+#main-index h1,
+h2 {
+    text-align: center;
+    margin: 10px;
+    color: #d8dad3;
+}
+
+#main-index h1 {
+    font-size: 37px;
+}
+
+#main-index {
+    background: linear-gradient(90deg, #181818, #767676);
+}
+
+.carousel-item .carousel-caption {
+    background-color: #181818b3;
+    padding: 10px;
+}
+
+.carousel-item .carousel-caption h4 {
+    text-transform: uppercase;
+}
+
+.tarjetas-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ab1e1e;
+    width: 212px;
+    height: 278px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #313131;
+}
+
+.tarjeta p {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: -11px 0;
+    background-color: #ff5d55;
+}
+
+.fa-solid {
+    font-size: 60px;
+    color: #181818;
+}
+
+/*Footer*/
+
+.pre-footer {
+    width: 100%;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+}
+
+.pre-footer a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.footer {
+    color: #929292;
+    background-color: #181818;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer p {
+    padding: 5px;
+    margin: 0;
+}
+
+/*  PAGINA CALISTENIA  */
+
+#main-calistenia .img-main-calistenia img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+#main-calistenia {
+    width: 100%;
+    background: linear-gradient(90deg, #181818, #767676);
+    color: #d8dad3;
+}
+
+.primer-div h2 {
+    text-align: left;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.primer-div p {
+    text-align: left;
+    margin: 0 0 20px 30px;
+}
+
+.primer-div {
+    text-align: right;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        "primer-div-texto primer-div-img"
+        "primer-div-texto primer-div-iframe"
+    ;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: solid 2px #343434;
+    padding-bottom: 20px;
+}
+
+.primer-div-texto {
+    grid-area: primer-div-texto;
+}
+
+.primer-div-img {
+    grid-area: primer-div-img;
+}
+
+.primer-div-iframe {
+    grid-area: primer-div-iframe;
+}
+
+.primer-div img {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.primer-div iframe {
+    width: 90%;
+    margin: auto;
+}
+
+.segundo-div {
+    text-align: left;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    border-bottom: solid 2px #343434;
+    padding-bottom: 20px;
+}
+
+.segundo-div h2 {
+    text-align: right;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.segundo-div p {
+    text-align: right;
+    margin: 0 30px 20px 0;
+}
+
+.segundo-div img {
+    width: 90%;
+    margin: auto;
+}
+
+.tercer-div {
+    text-align: right;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        "tercer-div-texto tercer-div-iframeUno"
+        "tercer-div-texto tercer-div-iframeDos"
+    ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tercer-div-texto {
+    grid-area: tercer-div-texto;
+}
+
+.tercer-div-img {
+    grid-area: tercer-div-iframeUno;
+}
+
+.tercer-div-iframe {
+    grid-area: tercer-div-iframeDos;
+}
+
+.tercer-div-texto p a {
+    color: #d8dad3;
+}
+
+.tercer-div h2 {
+    text-align: left;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.tercer-div p {
+    text-align: left;
+    margin: 0 0 20px 30px;
+}
+
+.tercer-div iframe {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+
+    .primer-div,
+    .tercer-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primer-div .primer-div-texto p {
+        margin: 20px;
+    }
+    .primer-div .primer-div-img {
+        padding: 0;
+        margin: 10px auto;
+    }
+    .segundo-div {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .segundo-div h2, .segundo-div p {
+        text-align: left;
+    }
+    .segundo-div p {
+        margin: 20px;
+    }
+    .tercer-div p {
+        margin: 20px;
+    }
+    .tercer-div iframe {
+        margin: 10px auto;
+        height: 200px;
+    }
+}   
+
+/* PAGINA EJERCICIOS */
+
+.sections-container {
+    background: linear-gradient(90deg, #181818, #767676);
+    color: #d8dad3;
+    width: 100%;
+}
+
+.espacio-en-blanco {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.h1-ejercicios {
+    z-index: 1;
+    top: 350px;
+    left: 356px;
+    font-size: 128px;
+    color: #d41c1c;
+    text-shadow: 3px 1px 3px black;
+}
+
+.main-ejercicios-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.sections-container h2 {
+    color: #d41c1cee;
+    text-decoration: underline;
+    font-size: 40px;
+    text-shadow: 3px 1px 3px black;
+    margin: 20px;
+}
+
+.basicos-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basicos-section p {
+    font-size: 18px;
+    margin: 15px 280px;
+}
+
+.basicos-section iframe {
+    width: 500px;
+    height: 300px;
+}
+
+.introduccion {
+    width: 72%;
+    margin: 0px auto;
+    padding: 20px;
+    border-left: solid 2px #d41c1c;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.estaticos-section {
+    text-align: center;
+}
+
+.epigrafe {
+    font-size: 16px;
+    font-style: italic;
+    margin: 80px auto 10px;
+}
+
+.div-planche-progresiones {
+    margin: 15px 100px;
+    text-align: left;
+    grid-area: div-planche-progresiones;
+}
+
+.div-planche-progresiones img {
+    width: 300px;
+    margin: 20px;
+}
+
+.estaticos-section h3 {
+    margin: 20px 0;
+}
+
+.div-planche-ejercicios {
+    margin: 15px;
+    text-align: left;
+    grid-area: div-planche-ejercicios;
+}
+
+
+.div-planche-ejercicios h4 {
+    margin: 10px 0;
+}
+
+.div-planche-ejercicios img {
+    width: 550px;
+    margin: 15px 0;
+}
+
+.div-planche-ejercicios iframe {
+    margin-top: 20px;
+}
+
+.estaticos-section {
+    text-align: center;
+}
+
+.div-frontLever-progresiones {
+    margin: 15px 100px;
+    text-align: left;
+    grid-area: div-frontLever-progresiones;
+}
+
+.div-frontLever-progresiones img {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.div-frontLever-ejercicios {
+    vertical-align: top;
+    margin: 15px;
+    text-align: left;
+    grid-area: div-frontLever-ejercicios;
+}
+
+.div-frontLever-ejercicios img,
+iframe {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.estaticos-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tuckPlanche tuckPlanche"
+        "div-planche-progresiones div-planche-ejercicios"
+        "frontLever frontLever"
+        "div-frontLever-progresiones div-frontLever-ejercicios"
+    ;
+    grid-template-rows: repeat(4, auto);
+}
+
+.tuckPlanche {
+    grid-area: tuckPlanche;
+}
+
+.frontLever {
+    grid-area: frontLever;
+}
+
+
+.rutinas {
+    text-align: center;
+}
+
+#tablaDeRutinas {
+    text-align: center;
+}
+
+.main-ejercicios {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/993/204/desktop-wallpaper-calisthenics-pull-up.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* PAGINA CONTACTO */
+
+#contacto-body {
+    background: linear-gradient(90deg, #181818, #767676);
+    color: #d8dad3
+}
+
+.h1-contacto {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0 40px 0;
+}
+
+.form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.label {
+    display: block;
+    text-align: left;
+}
+
+.input-contacto,
+.textarea {
+    width: 100%;
+    margin: 10px 0 0 0;
+    background: transparent;
+    border: none;
+    border-bottom: #313131 solid 1px;
+    color: #cacaca;
+}
+
+.input-contacto:focus {
+    height: 30px;
+}
+
+.boton-enviar {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: solid 2px #323232;
+    border-radius: 7px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #f1f2eb, #767676);
+    cursor: pointer;
+    transition: background-position 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #afaeae;
+    background-position: -100% 0;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.redes-sociales i {
+    width: 100px;
+    height: 45px;
+    transition: transform 0.2s;
+    text-align: center;
+    color: #f1f2eb;
+}
+
+.redes-sociales i:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 440px) {
+    .redes-sociales i {
+        width: 75px;
+    }
+}
+
+/* TIENDA */
+
+.h1-tienda {
+    text-align: center;
+    font-size: 60px;
+    border: solid 5px #ab1e1e;
+    padding: 20px;
+}
+
+.main-tienda {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
