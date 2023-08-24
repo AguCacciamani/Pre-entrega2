@@ -510,7 +510,7 @@ h2 {
     text-decoration: underline;
     font-size: 40px;
     text-shadow: 3px 1px 3px black;
-    margin: 20px;
+    flex-shrink: inherit;
 }
 
 .basicos-section {
@@ -522,7 +522,8 @@ h2 {
 
 .basicos-section p {
     font-size: 18px;
-    margin: 15px 280px;
+    margin: 15px auto;
+    width: 60%;
 }
 
 .basicos-section iframe {
@@ -539,6 +540,12 @@ h2 {
     font-weight: 400;
 }
 
+@media (max-width: 768px) {
+    .basicos-section p {
+        width: 80%;
+    }
+}
+
 .estaticos-section {
     text-align: center;
 }
@@ -546,14 +553,14 @@ h2 {
 .epigrafe {
     font-size: 16px;
     font-style: italic;
-    margin: 80px auto 10px;
+    margin: 0px auto 10px;
 }
 
-.div-planche-progresiones {
+/* .div-planche-progresiones {
     margin: 15px 100px;
     text-align: left;
     grid-area: div-planche-progresiones;
-}
+} */
 
 .div-planche-progresiones img {
     width: 300px;
@@ -564,19 +571,22 @@ h2 {
     margin: 20px 0;
 }
 
-.div-planche-ejercicios {
+/* .div-planche-ejercicios {
     margin: 15px;
     text-align: left;
     grid-area: div-planche-ejercicios;
-}
+} */
 
+.tuckPlanche {
+    margin-top: 30px;
+}
 
 .div-planche-ejercicios h4 {
     margin: 10px 0;
 }
 
 .div-planche-ejercicios img {
-    width: 550px;
+    width: 500px;
     margin: 15px 0;
 }
 
@@ -588,33 +598,37 @@ h2 {
     text-align: center;
 }
 
-.div-frontLever-progresiones {
+/* .div-frontLever-progresiones {
     margin: 15px 100px;
     text-align: left;
     grid-area: div-frontLever-progresiones;
+} */
+
+.frontLever {
+    margin-top: 20px;
 }
 
 .div-frontLever-progresiones img {
-    max-width: 500px;
+    max-width: 400px;
     margin: 20px;
 }
 
-.div-frontLever-ejercicios {
+/* .div-frontLever-ejercicios {
     vertical-align: top;
     margin: 15px;
     text-align: left;
     grid-area: div-frontLever-ejercicios;
-}
+} */
 
 .div-frontLever-ejercicios img,
 iframe {
-    max-width: 500px;
+    max-width: 400px;
     margin: 20px;
 }
 
-.estaticos-section {
+/* .estaticos-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 1fr;
     grid-template-areas:
         "tuckPlanche tuckPlanche"
         "div-planche-progresiones div-planche-ejercicios"
@@ -630,7 +644,7 @@ iframe {
 
 .frontLever {
     grid-area: frontLever;
-}
+} */
 
 
 .rutinas {
