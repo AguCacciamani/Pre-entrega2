@@ -482,27 +482,34 @@ h2 {
 }
 
 .espacio-en-blanco {
-    width: 100%;
-    height: 500px;
     display: flex;
+    width: 100%;
+    height: 31.25rem;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    background-image: url('https://media.gq.com.mx/photos/6234825f1982a4c011ad4bff/16:9/w_2560%2Cc_limit/calistenia.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.espacio-en-blanco img {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .h1-ejercicios {
-    z-index: 1;
-    top: 350px;
-    left: 356px;
-    font-size: 128px;
+    margin: 0 auto;
+    font-size: 8rem;
     color: #d41c1c;
     text-shadow: 3px 1px 3px black;
 }
 
-.main-ejercicios-img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+@media (max-width: 768px){
+    .h1-ejercicios {
+        font-size: 6rem;
+    }
 }
 
 .sections-container h2 {
@@ -527,8 +534,8 @@ h2 {
 }
 
 .basicos-section iframe {
-    width: 500px;
-    height: 300px;
+    width: 80%;
+    max-height: 300px;
 }
 
 .introduccion {
@@ -563,7 +570,7 @@ h2 {
 } */
 
 .div-planche-progresiones img {
-    width: 300px;
+    width: 70%;
     margin: 20px;
 }
 
@@ -586,7 +593,7 @@ h2 {
 }
 
 .div-planche-ejercicios img {
-    width: 500px;
+    width: 100%;
     margin: 15px 0;
 }
 
@@ -609,7 +616,7 @@ h2 {
 }
 
 .div-frontLever-progresiones img {
-    max-width: 400px;
+    max-width: 80%;
     margin: 20px;
 }
 
@@ -622,7 +629,8 @@ h2 {
 
 .div-frontLever-ejercicios img,
 iframe {
-    max-width: 400px;
+    max-width: 80%;
+    min-width: 350px;
     margin: 20px;
 }
 
@@ -630,10 +638,10 @@ iframe {
     display: grid;
     grid-template-columns: 50% 1fr;
     grid-template-areas:
-        "tuckPlanche tuckPlanche"
-        "div-planche-progresiones div-planche-ejercicios"
-        "frontLever frontLever"
-        "div-frontLever-progresiones div-frontLever-ejercicios"
+    "tuckPlanche tuckPlanche"
+    "div-planche-progresiones div-planche-ejercicios"
+    "frontLever frontLever"
+    "div-frontLever-progresiones div-frontLever-ejercicios"
     ;
     grid-template-rows: repeat(4, auto);
 }
@@ -655,13 +663,29 @@ iframe {
     text-align: center;
 }
 
-.main-ejercicios {
-    margin: 0;
-    padding: 0;
+@media (max-width: 576px){
+    .h1-ejercicios {
+        font-size: 4rem;
+    }
+    .basicos-section {
+        align-items: flex-start;
+    }
+    .sections-container .basicos-section .introduccion {
+        margin: 0;
+        width: 100%;
+    }
+    .basicos-section p {
+        margin: 15px 10px;
+        width: 90%;
+    }
+}
+
+/* .main-ejercicios {
+    width: 100%;
     background-image: url('https://e1.pxfuel.com/desktop-wallpaper/993/204/desktop-wallpaper-calisthenics-pull-up.jpg');
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 /* PAGINA CONTACTO */
 
