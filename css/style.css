@@ -27,38 +27,7 @@ body {
 }
 
 /*  INICIO  */
-
-/* Header flexbox */
-/* .header {
-    width: 100%;
-    height: 105px;
-    background-color: #3a3a3a;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo-flex-container {
-    height: 100%;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logo-img {
-    height: 105px;
-}
-
-.logo-flex-container a {
-    height: auto;
-    text-decoration: none;
-} */
-
+/* Navbar */
 .p-logo {
     font-family: 'Big Shoulders Stencil Text', cursive;
     color: #d41c1c;
@@ -66,7 +35,6 @@ body {
     margin: 0;
 }
 
-/* BOOTSTRAP */
 .navbar {
     background-color: #343434;
     position: sticky;
@@ -104,115 +72,6 @@ body {
     margin: 0 auto;
   }
 }
-
-/* .buscador-container {
-    display: flex;
-    height: 100%;
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-}
-
-.buscador-container input[type="search"] {
-    border-radius: 25px;
-    border: solid 1px #d8dad3;
-    width: 200px;
-    height: 25px;
-    text-align: left;
-    padding-left: 15px;
-    margin: 0 10px;
-}
-
-.buscador-container input[type="submit"] {
-    height: 25px;
-    width: 50px;
-    background-color: #fff;
-    border: solid 1px #cacaca;
-    border-radius: 25px;
-} 
-
-.nav {
-    text-transform: uppercase;
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-}
-
-.nav ul li {
-    margin: 10px 10px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #d8dad3;
-    padding: 5px;
-}
-
-.nav ul li a:hover {
-    color: #f1f2eb;
-}
-
-@media (max-width: 756px) {
-    .header {
-        width: 100%;
-        flex-direction: column;
-        position: inherit;
-        height: auto;
-        justify-content: center;
-    }
-
-    .logo-flex-container {
-        width: 100%;
-        justify-content: center;
-        height: 80px;
-    }
-
-    .logo-flex-container .logo-img {
-        height: 80px;
-    }
-
-    .p-logo {
-        font-size: 27px;
-    }
-
-    .buscador-container {
-        width: 100%;
-    }
-
-    .nav {
-        width: 100%;
-
-    }
-
-    .nav ul {
-        width: 100%;
-        margin: 10px auto;
-    }
-
-    .nav ul li {
-        font-size: 14px;
-    }
-
-    #main-index .interactive-main h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 510px) {
-    .nav ul li {
-        margin: 10px 0px;
-        font-size: 13px;
-    }
-    .nav ul {
-        padding: 0;
-    }
-} */
-
 
 /*--------Main---------*/
 
@@ -276,7 +135,7 @@ h2 {
     color: #181818;
 }
 
-/*Footer*/
+/* Footer */
 
 .pre-footer {
     width: 100%;
@@ -329,7 +188,7 @@ h2 {
     text-align: left;
     margin: 0 0 20px 30px;
 }
-
+   /* Grid */
 .primer-div {
     text-align: right;
     display: grid;
@@ -435,11 +294,11 @@ h2 {
 
 .tercer-div iframe {
     width: 90%;
-    height: 60%;
+    height: 350px;
     margin: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .primer-div,
     .tercer-div {
@@ -469,7 +328,7 @@ h2 {
     }
     .tercer-div iframe {
         margin: 10px auto;
-        height: 200px;
+        height: 300px;
     }
 }   
 
@@ -504,12 +363,6 @@ h2 {
     font-size: 8rem;
     color: #d41c1c;
     text-shadow: 3px 1px 3px black;
-}
-
-@media (max-width: 768px){
-    .h1-ejercicios {
-        font-size: 6rem;
-    }
 }
 
 .sections-container h2 {
@@ -551,6 +404,9 @@ h2 {
     .basicos-section p {
         width: 80%;
     }
+    .h1-ejercicios {
+        font-size: 6rem;
+    }
 }
 
 .estaticos-section {
@@ -563,12 +419,6 @@ h2 {
     margin: 0px auto 10px;
 }
 
-/* .div-planche-progresiones {
-    margin: 15px 100px;
-    text-align: left;
-    grid-area: div-planche-progresiones;
-} */
-
 .div-planche-progresiones img {
     width: 70%;
     margin: 20px;
@@ -577,12 +427,6 @@ h2 {
 .estaticos-section h3 {
     margin: 20px 0;
 }
-
-/* .div-planche-ejercicios {
-    margin: 15px;
-    text-align: left;
-    grid-area: div-planche-ejercicios;
-} */
 
 .tuckPlanche {
     margin-top: 30px;
@@ -605,12 +449,6 @@ h2 {
     text-align: center;
 }
 
-/* .div-frontLever-progresiones {
-    margin: 15px 100px;
-    text-align: left;
-    grid-area: div-frontLever-progresiones;
-} */
-
 .frontLever {
     margin-top: 20px;
 }
@@ -620,39 +458,12 @@ h2 {
     margin: 20px;
 }
 
-/* .div-frontLever-ejercicios {
-    vertical-align: top;
-    margin: 15px;
-    text-align: left;
-    grid-area: div-frontLever-ejercicios;
-} */
-
 .div-frontLever-ejercicios img,
 iframe {
     max-width: 80%;
     min-width: 350px;
     margin: 20px;
 }
-
-/* .estaticos-section {
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    grid-template-areas:
-    "tuckPlanche tuckPlanche"
-    "div-planche-progresiones div-planche-ejercicios"
-    "frontLever frontLever"
-    "div-frontLever-progresiones div-frontLever-ejercicios"
-    ;
-    grid-template-rows: repeat(4, auto);
-}
-
-.tuckPlanche {
-    grid-area: tuckPlanche;
-}
-
-.frontLever {
-    grid-area: frontLever;
-} */
 
 
 .rutinas {
@@ -679,13 +490,6 @@ iframe {
         width: 90%;
     }
 }
-
-/* .main-ejercicios {
-    width: 100%;
-    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/993/204/desktop-wallpaper-calisthenics-pull-up.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-} */
 
 /* PAGINA CONTACTO */
 
