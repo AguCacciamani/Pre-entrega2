@@ -496,8 +496,8 @@ h2 {
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        background-image: url(../media/calistenia.webp);
-        background-size: contain;
+        background-image: url('https://media.gq.com.mx/photos/6234825f1982a4c011ad4bff/1:1/w_2560%2Cc_limit/calistenia.jpg');
+        background-size: cover;
         background-attachment: local;
     }
 }
