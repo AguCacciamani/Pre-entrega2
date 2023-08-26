@@ -22,10 +22,6 @@ body {
     font-family: 'Alata', sans-serif;
 }
 
-.nav__a--active {
-    background-color: #5d5d5d;
-}
-
 /*  INICIO  */
 /* Navbar */
 .p-logo {
@@ -62,6 +58,21 @@ body {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #d41c1c;
     --bs-gradient: none;
+}
+
+.text-light {
+    --bs-text-opacity: 1;
+    color: #d8dad3!important;
+}
+.active {
+    background-color: #515151;
+    border-radius: 3px;
+    color: #fff!important;
+}
+.nav-link:hover {
+    color: #ffffff!important;
+    background-color: #3a3a3a;
+    border-radius: 3px;
 }
 
 @media (max-width: 441px) {
