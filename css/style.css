@@ -1,6 +1,7 @@
 /*FUENTES*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 * {
     margin: 0;
@@ -620,4 +621,96 @@ h2 {
     height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.categorias {
+    width: 100%;
+    height: 50px;
+    background-color: #131313;
+    position: sticky;
+    top: 105px;
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav .subNav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nav .subNav li {
+    margin: 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav .subNav li a {
+    text-decoration: none;
+    color: #d8dad3;
+    padding: 5px;
+}
+
+.nav .subNav li a:hover {
+    color: #f1f2eb;
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+        position: inherit;
+        height: auto;
+        justify-content: center;
+    }
+
+    .logo-flex-container {
+        width: 100%;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .logo-flex-container .logo-img {
+        height: 80px;
+    }
+
+    .p-logo {
+        font-size: 27px;
+    }
+
+    .buscador-container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+
+    }
+
+    .nav .subNav {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .nav .subNav li {
+        font-size: 14px;
+    }
+
+    #main-index .interactive-main h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 412px) {
+    .nav .subNav li {
+        margin: 10px 5px;
+        font-size: 13px;
+    }
 }
