@@ -44,6 +44,7 @@ body {
 .navbar-toggler {
     background-color: #d41c1c;
 }
+
 .btn-outline-success {
     --bs-btn-color: #d41c1c;
     --bs-btn-border-color: #d41c1c;
@@ -76,13 +77,18 @@ body {
     border-radius: 3px;
 }
 
-@media (max-width: 441px) {
+@media (max-width: 458px) {
  .navbar .container-fluid {
     justify-content: flex-end;
   }
   .container-fluid a {
     margin: 0 auto;
   }
+}
+@media (max-width: 330px) {
+    .navbar-brand {
+        flex-wrap: wrap;
+    }
 }
 
 /*--------Main---------*/
@@ -689,6 +695,7 @@ h2 {
 .dropdown-menu {
     --bs-dropdown-bg: #131313;
     --bs-dropdown-border-radius: none;
+    --bs-dropdown-link-hover-bg: none;
     border-color: #131313;
 }
 
