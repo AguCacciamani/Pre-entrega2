@@ -625,21 +625,6 @@ h2 {
 
 /* TIENDA */
 
-.h1-tienda {
-    text-align: center;
-    font-size: 60px;
-    border: solid 5px #ab1e1e;
-    padding: 20px;
-}
-
-.main-tienda {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Navbar secundario */
 .categorias {
     width: 100%;
@@ -699,10 +684,30 @@ h2 {
     border-color: #131313;
 }
 
-
-@media (max-width: 412px) {
-    .nav .subNav li {
-        margin: 10px 5px;
-        font-size: 13px;
+@media (max-width: 425px) {
+    .categorias {
+        top: 161px;
     }
+}
+
+/* Main */
+
+.indumentaria .hombres .div-remeras {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.indumentaria .hombres .div-pantalones {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.indumentaria .hombres .div-buzos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.card{
+    margin: 20px 15px;
 }
