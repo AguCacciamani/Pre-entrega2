@@ -669,9 +669,14 @@ h2 {
     --bs-btn-hover-bg: #131313;
     --bs-btn-active-bg: #131313;
 }
+.dropdown-menu {
+    --bs-dropdown-bg: #131313;
+    --bs-dropdown-border-radius: none;
+    border-color: #131313;
+}
 
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .header {
         width: 100%;
         flex-direction: column;
@@ -715,7 +720,7 @@ h2 {
     #main-index .interactive-main h1 {
         font-size: 30px;
     }
-}
+} */
 
 @media (max-width: 412px) {
     .nav .subNav li {
