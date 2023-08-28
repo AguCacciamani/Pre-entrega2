@@ -700,52 +700,6 @@ h2 {
 }
 
 
-/* @media (max-width: 750px) {
-    .header {
-        width: 100%;
-        flex-direction: column;
-        position: inherit;
-        height: auto;
-        justify-content: center;
-    }
-
-    .logo-flex-container {
-        width: 100%;
-        justify-content: center;
-        height: 80px;
-    }
-
-    .logo-flex-container .logo-img {
-        height: 80px;
-    }
-
-    .p-logo {
-        font-size: 27px;
-    }
-
-    .buscador-container {
-        width: 100%;
-    }
-
-    .nav {
-        width: 100%;
-
-    }
-
-    .nav .subNav {
-        width: 100%;
-        margin: 10px auto;
-    }
-
-    .nav .subNav li {
-        font-size: 14px;
-    }
-
-    #main-index .interactive-main h1 {
-        font-size: 30px;
-    }
-} */
-
 @media (max-width: 412px) {
     .nav .subNav li {
         margin: 10px 5px;
