@@ -23,10 +23,6 @@ body {
     font-family: 'Alata', sans-serif;
 }
 
-.nav__a--active {
-    background-color: #5d5d5d;
-}
-
 /*  INICIO  */
 /* Navbar */
 .p-logo {
@@ -131,7 +127,7 @@ h2 {
     background-color: #ff5d55;
 }
 
-.fa-solid {
+.tarjeta .fa-solid {
     font-size: 60px;
     color: #181818;
 }
@@ -647,20 +643,33 @@ h2 {
 }
 
 .nav .subNav li {
-    margin: 10px 10px;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
+}
+
+.nav .subNav li .fa-solid {
+    font-size: 18px;
 }
 
 .nav .subNav li a {
     text-decoration: none;
     color: #d8dad3;
-    padding: 5px;
+    padding: 0.375rem 0.75rem;
 }
 
 .nav .subNav li a:hover {
     color: #f1f2eb;
-    text-decoration: underline;
+    border: 1px solid #565e64;
 }
+
+.btn-secondary {
+    --bs-btn-color: #f1f2eb;
+    --bs-btn-bg: #131313;
+    --bs-btn-border-color: #131313;
+    --bs-btn-hover-bg: #131313;
+    --bs-btn-active-bg: #131313;
+}
+
 
 @media (max-width: 750px) {
     .header {
