@@ -1,6 +1,7 @@
 /*FUENTES*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 * {
     margin: 0;
@@ -141,7 +142,7 @@ h2 {
     background-color: #ff5d55;
 }
 
-.fa-solid {
+.tarjeta .fa-solid {
     font-size: 60px;
     color: #181818;
 }
@@ -631,4 +632,116 @@ h2 {
     height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+/* Navbar secundario */
+.categorias {
+    width: 100%;
+    height: auto;
+    background-color: #131313;
+    position: sticky;
+    top: 105px;
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.categorias .subNav {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.categorias .subNav li {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.categorias .subNav li .fa-solid {
+    font-size: 18px;
+    color: #f1f2eb;
+}
+
+.categorias .subNav li a {
+    text-decoration: none;
+    color: #d8dad3;
+    padding: 0.375rem 0.75rem;
+}
+
+.categorias .subNav li a:hover {
+    color: #f1f2eb;
+    border: 1px solid #565e64;
+}
+
+.btn-secondary {
+    --bs-btn-color: #f1f2eb;
+    --bs-btn-bg: #131313;
+    --bs-btn-border-color: #131313;
+    --bs-btn-hover-bg: #131313;
+    --bs-btn-active-bg: #131313;
+}
+.dropdown-menu {
+    --bs-dropdown-bg: #131313;
+    --bs-dropdown-border-radius: none;
+    border-color: #131313;
+}
+
+
+/* @media (max-width: 750px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+        position: inherit;
+        height: auto;
+        justify-content: center;
+    }
+
+    .logo-flex-container {
+        width: 100%;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .logo-flex-container .logo-img {
+        height: 80px;
+    }
+
+    .p-logo {
+        font-size: 27px;
+    }
+
+    .buscador-container {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+
+    }
+
+    .nav .subNav {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .nav .subNav li {
+        font-size: 14px;
+    }
+
+    #main-index .interactive-main h1 {
+        font-size: 30px;
+    }
+} */
+
+@media (max-width: 412px) {
+    .nav .subNav li {
+        margin: 10px 5px;
+        font-size: 13px;
+    }
 }
