@@ -477,6 +477,7 @@ h2 {
 .div-frontLever-ejercicios iframe {
     width: 100%;
     margin: 20px auto;
+    height: 300px;
 }
 
 .rutinas {
