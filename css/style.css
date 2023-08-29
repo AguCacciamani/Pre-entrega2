@@ -692,17 +692,33 @@ h2 {
 
 /* Main */
 
-.indumentaria .hombres .div-remeras {
+.indumentaria .hombres img {
+    width: 100%;
+}
+
+.indumentaria .mujeres img {
+    width: 100%;
+}
+
+.main-tienda h3 {
+    margin-top: 30px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+.div-remeras {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
 }
-.indumentaria .hombres .div-pantalones {
+
+.div-pantalones {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
 }
-.indumentaria .hombres .div-buzos {
+
+.div-buzos {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
