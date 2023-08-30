@@ -725,6 +725,21 @@ h2 {
     flex-direction: row;
 }
 
+.div-accesorios {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 .card{
     margin: 20px 15px;
+}
+
+.div-accesorios .card {
+    margin: 20px 30px;
+}
+
+.accesorios #accesorios img {
+    margin: 20px 0;
 }
