@@ -701,6 +701,10 @@ h2 {
     width: 100%;
 }
 
+.indumentaria .accesorios img {
+    width: 100%;
+}
+
 .main-tienda h3 {
     margin-top: 30px;
     margin-left: 50px;
@@ -730,10 +734,11 @@ h2 {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+}
 
 .card{
     margin: 20px 15px;
+    box-shadow: 2px 2px 6px 0px #a7a7a7;
 }
 
 .div-accesorios .card {
@@ -742,4 +747,16 @@ h2 {
 
 .accesorios #accesorios img {
     margin: 20px 0;
+}
+
+.div-elementos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#elementos img {
+    margin: 20px 0;
+    width: 100%;
 }
