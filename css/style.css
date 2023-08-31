@@ -738,6 +738,7 @@ h2 {
 .card{
     margin: 20px 15px;
     box-shadow: 2px 2px 6px 0px #a7a7a7;
+    text-transform: uppercase;
 }
 
 .div-accesorios .card {
@@ -758,4 +759,20 @@ h2 {
 #elementos img {
     margin: 20px 0;
     width: 100%;
+}
+
+.div-suplementos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#suplementos img {
+    margin: 20px 0;
+    width: 100%; 
+}
+
+.div-suplementos .card:nth-child(2) img {
+    padding-top: 20px;
 }
