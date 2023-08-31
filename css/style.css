@@ -776,3 +776,34 @@ h2 {
 .div-suplementos .card:nth-child(2) img {
     padding-top: 20px;
 }
+
+.envios {
+    text-align: center;
+}
+.envios form {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    align-items: center;
+}
+.envios h3 {
+    font-size: 60px;
+    color: #d41c1c;
+    text-shadow: 3px 1px 3px black;
+}
+.envios form i {
+    font-size: 30px;
+    margin: 0 10px;
+}
+.envios form input {
+    margin: 0 10px;
+    border-radius: 7px;
+    padding: 6px 12px;
+}
+.envios form button {
+    padding: 8px 6px;
+    border-radius: 5px;
+    background-color: #767676;
+    color: #fff;
+    border: 2px solid #3a3a3a;
+}
